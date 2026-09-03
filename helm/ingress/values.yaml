@@ -1,0 +1,13 @@
+ingressClassName: nginx
+
+frontend:
+  serviceName: frontend
+  servicePort: 80
+
+backend:
+  serviceName: backend
+  servicePort: 5000
+
+userService:
+  serviceName: user-service
+  servicePort: 5000
