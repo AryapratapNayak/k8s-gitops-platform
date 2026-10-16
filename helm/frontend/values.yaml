@@ -21,3 +21,9 @@ resources:
 probes:
   path: /
   port: 80
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 8
+  targetCPUUtilizationPercentage: 70
+  targetMemoryUtilizationPercentage: 80
